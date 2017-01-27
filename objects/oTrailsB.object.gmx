@@ -25,45 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Create buttons at location
+            <string>i=0;
+//Create buttons at location
 sCreateTestButton(470,580,sOne)
-
 sCreateTestButton(250,480,sLetterA)
-
 sCreateTestButton(580,750,sTwo)
-
 sCreateTestButton(950,675,sLetterB)
-
 sCreateTestButton(825,300,sThree)
-
 sCreateTestButton(675,600,sLetterC)
-
 sCreateTestButton(600,225,sFour)
-
 sCreateTestButton(1200,150,sLetterD)
-
 sCreateTestButton(1390,350,sFive)
-
 sCreateTestButton(975,425,sLetterE)
-
 sCreateTestButton(1300,800,sSix)
-
 sCreateTestButton(1500,500,sLetterF)
-
 sCreateTestButton(1500,50,sSeven)
-
 sCreateTestButton(200,100,sLetterG)
-
 sCreateTestButton(450,300,sEight)
-
 sCreateTestButton(100,450,sLetterH)
-
 sCreateTestButton(350,700,sNine)
-
 sCreateTestButton(100,800,sLetterI)
 
 global.Next=0 
-TrailsBArray()
+//TrailsBArray()
 </string>
           </argument>
         </arguments>

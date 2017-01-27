@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Create buttons at location
+            <string>i=0;
+//Create buttons at location
 sCreateTestButton(1050,400,sOne)
 sCreateTestButton(1400,327,sTwo)
 sCreateTestButton(925,200,sThree)
@@ -48,7 +49,7 @@ sCreateTestButton(1400,40,sEighteen)
 
 //Make global variable for next number in list of array
 global.Next=0
-TrailsAArray()
+//TrailsAArray()
 
 
 </string>

@@ -75,11 +75,12 @@ image_xscale = 2
           <argument>
             <kind>1</kind>
             <string>
-if global.TrailAArray[global.Next]= sprite_index  {
+if global.TrailAArray[global.Next]= id  {
     //image_alpha=.2
     image_blend = c_lime 
     if global.Next != 0 {
-         
+        
+        //save previous position
         x2 = global.PositionX
         y2 = global.PositionY
     }
@@ -92,7 +93,10 @@ else if image_blend != c_lime {
     image_blend = c_red
 }
 
-if global.Next= 18 {room_goto_next() }
+if global.Next= 18 {
+                                                //save stats first
+    room_goto_next() 
+}
 
 </string>
           </argument>
@@ -116,7 +120,7 @@ if global.Next= 18 {room_goto_next() }
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>// after clicked draw a line to previous
 if image_blend= c_lime and sprite_index !=sOne { 
     
     draw_set_colour(c_lime)
@@ -125,9 +129,6 @@ if image_blend= c_lime and sprite_index !=sOne {
     
 }
         
-   
-
-
 draw_self()
 
 </string>
