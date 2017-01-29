@@ -47,6 +47,7 @@
       <script>scripts\DrawTextAndUpdateCurrentY.gml</script>
       <script>scripts\ButtonPressed.gml</script>
       <script>scripts\SetupRoomSize.gml</script>
+      <script>scripts\KeyboardControls.gml</script>
     </scripts>
     <scripts name="Trails">
       <script>scripts\sCreateTestButton.gml</script>
@@ -70,6 +71,7 @@
       <object>objects\oTrailsAMoving</object>
       <object>objects\oTrailsBMoving_Instructions</object>
       <object>objects\oTrailsBMoving</object>
+      <object>objects\oDebugPage</object>
     </objects>
     <objects name="Objects">
       <object>objects\oButton</object>
@@ -85,6 +87,7 @@
     <room>rooms\rTrailsAMoving</room>
     <room>rooms\rTrailsBMoving_Instructions</room>
     <room>rooms\rTrailsBMoving</room>
+    <room>rooms\rDebugPage</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

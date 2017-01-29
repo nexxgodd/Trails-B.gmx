@@ -48,10 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Escape game
-if keyboard_check_pressed(vk_escape) {
-game_end()
-}
+            <string>KeyboardControls();
 </string>
           </argument>
         </arguments>

@@ -47,6 +47,8 @@ sCreateTestButton(350,700,sNine)
 sCreateTestButton(100,800,sLetterI)
 
 global.Next=0 
+global.StartTime=current_time;
+global.currentRoom=1;
 //TrailsBArray()
 </string>
           </argument>
@@ -70,17 +72,7 @@ global.Next=0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-// Escape game
-if keyboard_check_pressed(vk_escape) {
-game_end()
-}
-
-
-if keyboard_check_pressed(vk_space) {
-room_goto_next()
-
-}
+            <string>KeyboardControls();
 </string>
           </argument>
         </arguments>

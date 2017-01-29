@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>SetupRoomSize()
+</string>
           </argument>
         </arguments>
       </action>
@@ -48,6 +49,57 @@
           <argument>
             <kind>1</kind>
             <string>KeyboardControls();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x = view_wport[0] /2
+y = 0
+
+CurrentY = y
+Margin = 10
+
+draw_set_halign(fa_center)
+
+draw_set_font(fTitle)
+draw_set_alpha(1)
+draw_set_color(c_orange)
+
+DrawTextAndUpdateCurrentY("Debug")
+
+draw_set_font(fInstructions)
+draw_set_colour(c_black)
+
+
+DrawTextAndUpdateCurrentY("Time for A = " + string(global.TotalTime[0]/1000) + " seconds.")
+DrawTextAndUpdateCurrentY("Time for B = " + string(global.TotalTime[1]/1000) + " seconds.")
+
+DrawTextAndUpdateCurrentY("Current Time = " + string(current_time/1000) + " seconds.")
+
+
+
+draw_set_font(fMenu)
+
+
+
 </string>
           </argument>
         </arguments>

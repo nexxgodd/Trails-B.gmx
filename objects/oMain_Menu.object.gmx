@@ -48,6 +48,12 @@ view_hport = ScreenHeigth
 //Something else
 surface_resize(application_surface,ScreenWidth,ScreenHeigth)
 
+global.StartTime=0;
+//global.EndTime=0;
+global.TotalTime[0]=0;
+global.TotalTime[1]=0;
+global.currentRoom = 0;
+
 
 </string>
           </argument>
@@ -71,16 +77,7 @@ surface_resize(application_surface,ScreenWidth,ScreenHeigth)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Escape game
-if keyboard_check_pressed(vk_escape) {
-game_end()
-}
-
-
-if keyboard_check_pressed(vk_space) {
-room_goto_next()
-
-}
+            <string>KeyboardControls();
 </string>
           </argument>
         </arguments>
